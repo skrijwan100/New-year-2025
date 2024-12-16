@@ -1,0 +1,10 @@
+.namebtn{
+  box-shadow: 1px 1px 20px 2px #000000c2;
+  &:hover{
+    background-color: #0021d9 !important;
+  }
+  &:active{
+    background-color: #1235ff !important;
+    box-shadow:  1px 1px 20px 2px bisque;
+  }
+}
