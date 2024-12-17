@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Faculty+Glyphic&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Play:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 .namebtn{
-  box-shadow: 1px 1px 20px 2px #000000c2;
+  box-shadow: 3px 3px 3px 1px #000000c2;
   &:hover{
     background-color: #0021d9 !important;
   }
@@ -7,4 +8,19 @@
     background-color: #1235ff !important;
     box-shadow:  1px 1px 20px 2px bisque;
   }
+}
+.inputbox{
+  box-shadow: 2px 2px 1px 2px #000000a3;
+  color: red;
+  font-size: 20px;
+  backdrop-filter:blur(8px);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.main-box{
+  background-image: url('./assets/new4.jpg');
+  background-size:100%;
+}
+input::placeholder{
+  color: rgb(0, 76, 255);
+  font-size: 17px;
 }
