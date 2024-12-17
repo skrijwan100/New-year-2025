@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation';
+import Footer from './Footer';
 
 export default function home({Username}) {
     const naviget = useNavigate()
@@ -18,6 +19,7 @@ export default function home({Username}) {
         naviget("/wishpage")
     }
     return (
+        <>
         <div className='main-box' style={{display:"flex",height:"100vh",justifyContent:"center",alignItems:"center",flexDirection:"column",gap:"25px"}} >
             <TypeAnimation
               sequence={[
@@ -26,7 +28,7 @@ export default function home({Username}) {
                 1000, // wait 1s before replacing "Mice" with "Hamsters"
                 '2025',
                 1000
-              ]}
+            ]}
               wrapper="b"
               speed={40}
               repeat={Infinity}
@@ -42,6 +44,9 @@ export default function home({Username}) {
                 </form>
 
             </div>
+        <Footer/>
         </div>
+              </>
+
     )
 }
