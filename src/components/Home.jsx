@@ -1,10 +1,13 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { TypeAnimation } from 'react-type-animation';
 import Footer from './Footer';
+import { usernameContext } from '../context/username';
 
-export default function home({Username}) {
+
+export default function home() {
     const naviget = useNavigate()
+    const {Username}=useContext(usernameContext)
     const [person,setperson]=useState({personname:""})
     const onchange=(e)=>{
         setperson({...person,[e.target.name]:e.target.value})
@@ -16,6 +19,7 @@ export default function home({Username}) {
         }
 
         Username(person.personname)
+        // username(person.personname)
         naviget("/wishpage")
     }
     return (

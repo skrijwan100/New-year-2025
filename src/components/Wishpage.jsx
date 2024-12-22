@@ -1,10 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import newyear1 from "../assets/new-year-2025-e.mp4"
 import gif from "../assets/lodergif.gif"
 import { TypeAnimation } from 'react-type-animation';
 import Footer from './Footer';
 import newyearsong from "../assets/newyearsong.mp3";
-export default function Wishpage({ username }) {
+import { usernameContext } from '../context/username';
+export default function Wishpage() {
+  const {username}=useContext(usernameContext)
   const [loder, setloder] = useState(true)
   const newyearaudio = new Audio(newyearsong);
   
